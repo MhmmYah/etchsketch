@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="etch.css">
+    <script src="etch.js" defer></script>
+    <title>EtchSketch</title>
+</head>
+<body>
+    <div class="header">
+        <div class="card">
+            <label for="row">Rows: </label>
+            <input type="number" min="1" max="100" id="row" value="2">
+            <label for="col">Columns: </label>
+            <input type="number" min="1" max="100" id="col" value="2">
+        </div>
+        <div class="card">
+            <input type="checkbox" id="square" checked>
+            <label for="square">Square Etchboard</label>
+            <button onclick="createbox()">Clear</button>
+        </div>
+    </div>
+    <div id="main">
+    </div>
+</body>
+</html>
